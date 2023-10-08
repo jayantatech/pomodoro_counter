@@ -1,0 +1,348 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main__container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #e8f9fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.inner__container {
+    width: 80vw;
+    height: 88vh;
+    /* background: url(assets/img/img-1.jpg); */
+    background: linear-gradient(rgba(209, 232, 226, .4), rgba(17, 100, 102, .2)), no-repeat;
+    background-position: center;
+    /* background: linear-gradient(rgba(209, 232, 226, .4), rgba(17, 100, 102, .2)), url(assets/img/img-6.jpg), no-repeat; */
+    background-size: cover;
+    box-shadow: 18px 20px 30px #030e1b86;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    /* transition: 0.5ms ease; */
+}
+
+
+
+.social__links {
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    bottom: 40%;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.social__links i {
+    height: 60px;
+    width: 60px;
+    background-color: #d7e6e6;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #263137;
+    border-radius: 15px;
+}
+
+.soundown__boxs {
+    /* background-color: red; */
+    width: 22rem;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.soundown__box {
+    font-size: 8rem;
+    font-weight: 800;
+    /* width: 1rem;
+    height: 10rem; */
+    padding: 1rem 4rem;
+    background: #d7e6e6;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px #030e1b86;
+
+}
+
+.main__mudiel-container {
+    width: 40rem;
+    height: 40rem;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.soundown__box-devider {
+    position: absolute;
+    font-size: 5rem;
+    /* margin-left: -20px; */
+    color: white;
+    margin: auto;
+    margin-left: -20px;
+}
+
+.counter__tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 5px; */
+}
+
+.btn__tab {
+    padding: .5rem 2.2rem;
+    border-radius: 10px;
+    background: transparent;
+    background-color: #d7e6e6;
+    border: 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: .7rem;
+    margin-right: 10px;
+    color: #263137;
+
+}
+
+.both__button {
+    display: flex;
+    /* background-color: green; */
+    height: 3rem;
+    width: 100%;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    /* gap: 9rem; */
+
+}
+
+.both__button .btn__action {
+    padding: 0.5rem 3rem;
+    background-color: #d7e6e6;
+    font-size: 1.2rem;
+    margin: 0 70px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn__active {
+    /* background-color: #96cca8; */
+    /* background-color: #32444b; */
+    background-color: #434347;
+    color: white;
+}
+
+
+
+/* Styles for tablets (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    /* Your CSS styles for tablets go here */
+    .soundown__box {
+        padding: 1rem;
+        font-size: 7rem;
+    }
+
+    .both__button .btn__action {
+        padding: 0.5rem 3rem;
+        background-color: #d7e6e6;
+        font-size: 1.2rem;
+        margin: 0 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .both__button {
+        display: flex;
+        /* background-color: green; */
+        height: 3rem;
+        width: 100%;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+        /* gap: 9rem; */
+    }
+
+    .btn__tab {
+        padding: .5rem 1rem;
+        font-size: 1.1rem;
+        margin-bottom: .5rem;
+
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* Your CSS styles for mobile go here */
+    /* .main__container {
+        height: 100vh;
+        width: 100vw;
+        background-color: #e8f9fd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inner__container {
+        width: 95vw;
+        height: 95vh;
+        /* background: url(assets/img/img-1.jpg); */
+
+    /* }
+
+    .main__mudiel-container {
+        width: 100%;
+        height: 100%;
+        /* background-color: red; */
+    /* display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    ba
+} */
+    .inner__container {
+        width: 95vw;
+        height: 95vh;
+        /* background: url(assets/img/img-1.jpg); */
+
+    }
+
+    .soundown__box {
+        padding: .7rem;
+        font-size: 4rem;
+    }
+
+    .both__button .btn__action {
+        padding: 0.5rem 3rem;
+        background-color: #d7e6e6;
+        font-size: 1.2rem;
+        margin: 0 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .both__button {
+        display: flex;
+        /* background-color: green; */
+        height: 3rem;
+        width: 100%;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+        /* gap: 9rem; */
+    }
+
+    .btn__tab {
+        padding: .4rem .5rem;
+        font-size: 1rem;
+        margin-bottom: .1rem;
+
+    }
+
+    .counter__tab {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* gap: 5px; */
+        width: 90vw;
+        height: 3rem;
+        /* background-color: red; */
+    }
+
+    .main__mudiel-container {
+        width: 70%;
+        height: 60%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .social__links {
+        position: absolute;
+        color: white;
+        font-size: 1.2rem;
+        bottom: 40%;
+        left: 10px;
+        bottom: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .social__links i {
+        height: 40px;
+        width: 40px;
+        background-color: #d7e6e6;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: #263137;
+        border-radius: 15px;
+    }
+
+    .soundown__boxs {
+        /* background-color: red; */
+        width: 22rem;
+        height: 8rem;
+    }
+
+    .both__button .btn__action {
+        padding: 0.4rem 2rem;
+        background-color: #d7e6e6;
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+
+    .both__button {
+        margin-top: 0;
+
+    }
+
+
+
+}
+
+/* #botom__active {
+    background: #000000;
+    color: #fff;
+} */
